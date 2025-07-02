@@ -20,8 +20,10 @@ Install the package from the npm registry using your favorite package manager:
 
 ```bash
 npm install rs-ocr
+```
 ```bash
 yarn add rs-ocr
+```
 ```bash
 pnpm add rs-ocr
 ```
@@ -109,16 +111,8 @@ export const POST = async ({ request }) => {
 
 If you wish to build the package yourself, you will need to have the Rust toolchain and `wasm-pack` installed.
 
-1.  **Install Rust:**
-    ```bash
-    curl --proto '=https' --tlsv1.2 -sSf [https://sh.rustup.rs](https://sh.rustup.rs) | sh
-    ```
-
-2.  **Install wasm-pack:**
-    ```bash
-    curl [https://rustwasm.github.io/wasm-pack/installer/init.sh](https://rustwasm.github.io/wasm-pack/installer/init.sh) -sSf | sh
-    ```
-
+1.  **Install Rust**
+2.  **Install wasm-pack**
 3.  **Build the Package:**
 
     This project requires a specific `RUSTFLAGS` configuration because the `getrandom` crate (a dependency of `pdf_extract`) needs to be told which backend to use in a non-browser WASM environment.

@@ -1,6 +1,6 @@
 [package]
 name = "rs-ocr"
-version = "0.1.2"
+version = "0.1.4"
 authors = ["Silvia Rodríguez Bares <uo271490@uniovi.es>"]
 edition = "2018"
 
